@@ -12,70 +12,46 @@
     <title>Portfólio</title>
 </head>
 <body>
-<div class=container>
-  <div class="navigation">
-    <button id="sized" class="menu">
-      <span></span>        
-    </button>
-      <div id="myModal" class="modal">
-      <!-- Modal content -->
-        <div class="modal-content animated zoomIn">
-          <div class="modal-header">
-            <div class="container">
-              <div class="modal-header-wrapper">
-                <a href="/index.html"> <img src="/src/assets/icons/_.png" alt="logo"></a>
-                <span class="close">×</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="modal-body nav">
-            <div class="container">
-              <ul class="menu-wraper">
-                <li class="menu-item">
-                    <a href="/index.html">Formação</a>
-                    <div class="animation-item"></div>
-                </li>
-
-                <li class="menu-item">
-                    <a href="/index.html">Atuação profissional</a>
-                    <div class="animation-item"></div>
-                </li>
-
-                <li class="menu-item">
-                    <a href="/index.html">Portfólio</a>
-                    <div class="animation-item"></div>
-                </li>
-
-                <li class="menu-item">
-                    <a href="/index.html">Contato</a>
-                    <div class="animation-item"></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="menu-active">
+  <div class="container">
+    <div class="nav-menu">
+        <a href="/index.html"> <img src="/src/assets/icons/_.png" alt="logo"></a>    
+        <button class="modalBtn">X</button>
+    </div>
   </div>
 </div>
-<script>
-const modal = document.getElementById('myModal'); 
-const btn = document.getElementById("sized");
-const span = document.getElementsByClassName("close")[0];
+  
+  <div class="modal">
+      <div class="content">
+        <ul class="menu-wraper">
+          <li class="menu-item">
+              <a href="/index.html">Formação</a>
+              <div class="animation-item"></div>
+          </li>
+
+          <li class="menu-item">
+              <a href="/index.html">Atuação profissional</a>
+              <div class="animation-item"></div>
+          </li>
+
+          <li class="menu-item">
+              <a href="/index.html">Portfólio</a>
+              <div class="animation-item"></div>
+          </li>
+
+          <li class="menu-item">
+              <a href="/index.html">Contato</a>
+              <div class="animation-item"></div>
+          </li>
+
+          <li class="menu-item">
+            <span class="btnClose">Sair</span>
+            <div class="animation-item"></div>
+        </li>
+      </ul>
+      </div>
+  </div>
     
-btn.onclick = function() {
-    modal.style.display = "block";
-    };
-
-span.onclick = function() {
-    modal.style.display = "none";
-};
-
-window.onclick = function(event) {
-if (event.target == modal) {
-    modal.style.display = "none";
-    }
-}
-</script>
+<script src="/src/js/modal.js"></script>
 </body>
 </html>

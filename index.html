@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container menu-desktop">
         <nav class="nav-menu">
             <a href="/index.html"> <img src="/src/assets/icons/_.png" alt="logo"></a>
             
@@ -38,6 +38,46 @@
                 </li>
             </ul>
         </nav>
+    </div>
+
+    <div class="menu-active">
+        <div class="container">
+          <div class="nav-menu">
+              <a href="/index.html"> <img src="/src/assets/icons/_.png" alt="logo"></a>    
+              <button class="modalBtn">X</button>
+          </div>
+        </div>
+    </div>
+        
+    <div class="modal">
+        <div class="content">
+            <ul class="menu-wraper">
+            <li class="menu-item">
+                <a href="/index.html">Formação</a>
+                <div class="animation-item"></div>
+            </li>
+    
+            <li class="menu-item">
+                <a href="/index.html">Atuação profissional</a>
+                <div class="animation-item"></div>
+            </li>
+    
+            <li class="menu-item">
+                <a href="/index.html">Portfólio</a>
+                <div class="animation-item"></div>
+            </li>
+    
+            <li class="menu-item">
+                <a href="/index.html">Contato</a>
+                <div class="animation-item"></div>
+            </li>
+    
+            <li class="menu-item">
+                <span class="btnClose">Sair</span>
+                <div class="animation-item"></div>
+            </li>
+        </ul>
+        </div>
     </div>
     
     <section id="home">
@@ -81,5 +121,7 @@
             </div>
         </div>
     </section>
+
+    <script src="/src/js/modal.js"></script>
 </body>
 </html>
