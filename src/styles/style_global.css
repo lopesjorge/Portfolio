@@ -143,6 +143,12 @@
   }
 }
 
+.link-active{
+  height: 1px;
+  width: 100%;
+  background: var(--white-opacity-80);
+  margin-top: .25rem;
+}
 
 /* Menu mobile */
 .modalBtn {

@@ -1,0 +1,49 @@
+h4{
+    font-family: var(--font-family-primary);
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .875rem !important;
+}
+
+.title-formacao{
+    color: var(--white);
+    font-family: var(--font-family-primary);
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem !important;
+
+    @media (max-width:640px) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    @media (max-width:440px) {
+        font-size: 1.5rem;
+    }
+}
+
+.card{
+    background: var(--bg-tertiary);
+    border-radius: .75rem;
+    padding: 1rem;
+}
+
+.cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+
+    @media(max-width:1024px){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    @media(max-width:640px){
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @media(max-width:500px){
+        grid-template-columns:1fr;
+    }
+}
