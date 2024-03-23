@@ -1,0 +1,71 @@
+#tecnologias{
+    height: 100%;
+    padding: 7.5rem 0;
+}
+
+#footer{
+    position: static;
+}
+
+.title-formacao{
+    color: var(--white);
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem !important;
+}
+
+h2{
+    color: var(--white-opacity-80);
+    font-family: var(--font-family-primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+h3{
+    color: var(--white-opacity-80);
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.detalhe{
+    color: var(--blue);
+}
+
+p{
+    max-width: 100%;
+    text-align: left;
+}
+
+.mt-32{
+    margin-top: 2rem !important ;
+}
+
+.mt-64{
+    margin-top: 4rem !important ;
+}
+
+.mb-32{
+    margin-bottom: 2rem !important ;
+}
+
+ul{
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.item{
+    width: 100%;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.text-wrapper{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
